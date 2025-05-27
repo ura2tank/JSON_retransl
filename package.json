@@ -1,0 +1,21 @@
+{
+  "name": "json_retransl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ura2tank/JSON_retransl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ura2tank/JSON_retransl/issues"
+  },
+  "homepage": "https://github.com/ura2tank/JSON_retransl#readme",
+  "description": ""
+}
