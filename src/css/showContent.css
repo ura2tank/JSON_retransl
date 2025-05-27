@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Превращаем body в flex-контейнер */
+    flex-direction: column; /* Ориентируем дочерние элементы по вертикали */
+    align-items: center; /* Центрируем дочерние элементы по горизонтали */
+}
+
+#output-all {
+    width: 100%;
+    max-width: 900px; /* Ограничим максимальную ширину для центрирования плитки */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.container-component {
+    /* width: 100px; */
+    /* height: 150px; */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container-component .title {
+    font-size: 18px; /* Увеличено на 50% (12 * 1.5) */
+    font-weight: bold;
+    margin: 5px 0;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.class {
+    font-size: 15px; /* Увеличено на 50% (10 * 1.5) */
+    color: #666;
+    margin: 3px 0;
+}
+
+.price {
+    font-size: 21px; /* Увеличено на 50% (14 * 1.5) */
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 3px 0;
+}
+
+.disc {
+    font-size: 13.5px; /* Увеличено на 50% (9 * 1.5) */
+    color: #333;
+    margin: 3px 0 15px 0; /* Скорректирован нижний отступ */
+}
+
+.imagesPlace {
+    width: 120px; /* Увеличено на 50% (80 * 1.5) */
+    height: 120px; /* Увеличено на 50% (80 * 1.5) */
+    object-fit: cover;
+    border-radius: 3px;
+    margin: 5px auto;
+    display: block;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    max-width: 900px; /* Ограничим максимальную ширину для центрирования */
+    width: 100%;
+    justify-content: center; /* Центрируем элементы внутри #input */
+}
+
+/* Стили для кнопки поиска */
+button[name="submitButton"] {
+    width: 50px;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0;
+    box-sizing: border-box;
+}

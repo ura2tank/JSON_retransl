@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f6f6;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.alfabet {
+    margin: 18px 0 0 18px;
+    font-size: 15px;
+}
+
+#display {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px auto;
+    gap: 60px;
+    width: 100%;
+}
+
+.encrypt-container,
+.decrypt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 7px;
+    padding: 18px 18px 18px 18px;
+    min-width: 300px;
+    max-width: none;
+    box-shadow: 2px 2px 8px #eaeaea;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.input-output-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.encrypt-output,
+.decrypt-output {
+    min-width: 100px;
+    min-height: 100px;
+    height: auto;
+    width: 350px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    padding: 7px;
+    background: #f9f9f9;
+    word-break: break-word;
+    white-space: pre-wrap;
+    font-size: 15px;
+    color: #333;
+    font-family: inherit;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.encrypt-output p,
+.decrypt-output p {
+    margin: 0;
+}
+
+#encrypt-autoinput,
+#decrypt-autoinput {
+    min-width: 100px;
+    min-height: 100px;
+    height: auto;
+    width: 350px;
+    border: none;
+    border-right: 2px solid #e0e0e0;
+    border-radius: 4px 0 0 4px;
+    padding: 7px;
+    font-size: 15px;
+    margin-bottom: 0;
+    background: #f9f9f9;
+    resize: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    flex-grow: 1;
+
+    /*Chrome, Safari, Edge*/
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /*Firefox */
+    scrollbar-width: none;
+    /*Internet Explorer и Edge Legacy */
+    -ms-overflow-style: none;
+}
+
+#encrypt-autoinput:focus,
+#decrypt-autoinput:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 700px) {
+    #display {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 30px auto;
+        gap: 30px;
+        width: 95%;
+        max-width: 700px;
+    }
+
+    .encrypt-container,
+    .decrypt-container {
+        min-width: auto;
+        max-width: 100%;
+        gap: 0;
+        padding: 15px;
+    }
+
+    .input-output-wrapper {
+        flex-direction: row;
+        /* gap: 10px; */
+        width: 100%;
+    }
+
+    #encrypt-autoinput,
+    #decrypt-autoinput {
+        min-width: auto;
+        max-width: none;
+        min-height: 80px;
+        height: auto;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .encrypt-output,
+    .decrypt-output {
+        min-width: auto;
+        max-width: none;
+        min-height: 80px;
+        height: auto;
+        border: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+}

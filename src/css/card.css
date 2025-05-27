@@ -1,0 +1,39 @@
+.container-component {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container-component .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-component .class {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.container-component .price {
+    font-size: 1.1em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.container-component .disc {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.container-component .imagesPlace {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+} 
