@@ -91,7 +91,7 @@ async function createHandler (req, res) {
                 <html>
                 <head>
                     <title>${product.title}</title>
-                    <link rel="stylesheet" href="css/card.css">
+                    <link rel="stylesheet" href="/css/card.css">
                 </head>
                 <body>
                     <div id="card-container">
