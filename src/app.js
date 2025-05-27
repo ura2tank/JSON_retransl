@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const createHandler = require('./handler');
 
-const hostname = '127.0.0.2';
+const hostname = '0.0.0.0';
 const port = 3000;
 
 
