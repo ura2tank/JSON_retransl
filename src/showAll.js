@@ -11,10 +11,10 @@ async function showAll() {
         const data = await response.json();
         console.log('Все продукты:', data);
 
-        const imgDir = path.join(__dirname, 'src', 'img');
-        // if (!fs.existsSync(imgDir)) {
-        //     fs.mkdirSync(imgDir, { recursive: true });
-        // }
+        const imgDir = path.join(__dirname, 'img');
+        if (!fs.existsSync(imgDir)) {
+            fs.mkdirSync(imgDir, { recursive: true });
+        }
         
 
         data.products.forEach(product => {
